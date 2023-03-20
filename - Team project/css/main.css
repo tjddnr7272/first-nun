@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+    }
+  }
+
+h1.main_logo{
+  font-family: 'Jua', sans-serif;
+}
