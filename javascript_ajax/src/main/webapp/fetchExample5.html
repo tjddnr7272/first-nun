@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" defer>
+    
+    //이벤트 소스에 이벤트리스너 등록
+    document.querySelector("#button").addEventListener("click", ()=>{
+      requestUserList();
+    });
+
+    function requestUserList(){
+     
+      // console.log(userId, userPw);   
+   
+      };
+
+
+      fetch("userList.jsp")
+       .then(response => response.json()) 
+       .then(list => showMessage(list)) // ArrayList가 아니라 List(일반배열)이다, 자바가아니기떄문
+       .catch(error => showMessage(error))
+       .finally(()=>console.log("이미지 로딩 없애는 코드"));
+      
+      
+    
+
+  function showMessage(list){
+    console.dir(list);
+  }
+</script>
+
+</head>
+
+<body>
+ <button id="button">회원목록 받기</button>
+</body>
+
+</html>
