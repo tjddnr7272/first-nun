@@ -17,7 +17,7 @@ public class CollectionsExample {
         Integer[] scores = {88, 70, 100, 60, 85};
 //        List<Integer> list =  Arrays.asList(scores);
         List<Integer> list =  Arrays.asList(88, 70 , 100, 60, 85);
-        for (Integer integer : list) {
+        for (Integer integer : list) {dasasddasasdasdasdasdasd
         	System.out.println(integer);
 			
 		}
